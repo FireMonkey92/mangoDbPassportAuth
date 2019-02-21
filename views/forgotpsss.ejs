@@ -1,0 +1,30 @@
+<div class="row mt-5">
+    <div class="col-sm-8 col-md-6 col-lg-4 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i> Forgot Password?</h1>
+        <form action="/users/forgetpass" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Please Enter Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Enter New Password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block mt-4">Check Account</button>
+        </form>
+      </div>
+    </div>
+  </div>

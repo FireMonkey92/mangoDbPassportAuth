@@ -1,7 +1,8 @@
 <div class="row mt-5">
-    <div class="col-sm-8 col-md-6 col-lg-4 m-auto">
+    <div class="col-sm-8 col-md-6 col-lg-6 m-auto">
       <div class="card card-body">
         <h1 class="text-center mb-3"><i class="fas fa-sign-in-alt"></i>  Login</h1>
+        <% include ./partials/message %>
         <form action="/users/login" method="POST">
           <div class="form-group">
             <label for="email">Email</label>
@@ -24,10 +25,15 @@
             />
           </div>
           <button type="submit" class="btn btn-primary btn-block mt-4">Login</button>
-        </form>
-        <p class="lead mt-4">
-          No Account? <a href="/users/register">Register</a>
-        </p>
+        </form> 
+        <div class="row">
+        <div class="col-7 lead mt-4">
+           <p> No Account? <a href="/users/register">Register</a></p>
+        </div>
+        <div class="col-5 lead mt-4">
+          <p>Forgot Password?</br> <a href="/users/forgotpassword">Forgot Password</a></p>
+        </div>
+      </div>
       </div>
     </div>
   </div>
